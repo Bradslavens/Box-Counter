@@ -1,0 +1,18 @@
+{
+  "name": "box-counter",
+  "version": "1.0.0",
+  "description": "Offline PWA counter for tracking boxes lifted",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["pwa", "counter"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "fake-indexeddb": "^6.2.5",
+    "jsdom": "^26.1.0",
+    "vitest": "^4.1.9"
+  }
+}

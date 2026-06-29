@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a2e">
+  <title>Box Counter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1 class="app__title">Box Counter</h1>
+      <p class="app__subtitle">boxes lifted</p>
+    </header>
+
+    <section class="app__display" aria-label="Total count">
+      <p id="total" class="app__total" aria-live="polite">0</p>
+    </section>
+
+    <button id="increment" class="app__button" type="button">
+      + 1 Box
+    </button>
+  </main>
+
+  <script type="module">
+    import * as db from './js/db.js';
+    import { initApp } from './js/app.js';
+
+    initApp(db);
+  </script>
+</body>
+</html>
